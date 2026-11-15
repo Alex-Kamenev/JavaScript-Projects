@@ -39,17 +39,20 @@ function makeSound(key) {
     case "k":
       var kick = new Audio("sounds/kick-bass.mp3");
       kick.play();
+      break;
     case "l":
       var crash = new Audio("sounds/crash.mp3");
       crash.play();
       break;
     default:
-      console.log(buttonInnerHTML);
+      return;
   }
 }
 
 function buttonAnimation(currentkey) {
+  if (!["w", "a", "s", "d", "j", "k", "l"].includes(currentkey)) return;
   var activeButton = document.querySelector("." + currentkey);
+  if (!activeButton) return;
   activeButton.classList.add("pressed");
   setTimeout(function(){
     activeButton.classList.remove("pressed");

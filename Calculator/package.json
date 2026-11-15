@@ -4,8 +4,10 @@
   "description": "",
   "main": "calculator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node calculator.js",
+    "test": "node --test calculator.test.js"
   },
+  "engines": { "node": ">=22" },
   "author": "Aleksandar Kamenev",
   "license": "ISC",
   "dependencies": {
