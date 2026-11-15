@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="/styles.css"> -->
   <title>BMI Calculator</title>
 </head>
@@ -10,8 +11,8 @@
 <body>
   <div class="constainer" style="text-align: center; padding: 10rem 0 0 0; margin; auto;">
     <form class="" action="/bmiCalculator" method="post">
-      <input type="text" name="weight" placeholder="weight">
-      <input type="text" name="height" placeholder="height">
+      <label>Weight (kg) <input type="number" name="weight" placeholder="70" min="0.01" step="any" required></label>
+      <label>Height (m) <input type="number" name="height" placeholder="1.75" min="0.01" step="any" required></label>
       <!-- // to trigger post method need submit -->
       <button type="submit" name="button">Calculate</button>
     </form>

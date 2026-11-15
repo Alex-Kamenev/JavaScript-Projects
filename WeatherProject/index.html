@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather App</title>
 </head>
 
 <body>
   <form class="" action="/" method="post">
     <label for="cityInput">City Name: </label>
-    <input id="cityInput" type="text" name="cityName" value="">
+    <input id="cityInput" type="text" name="cityName" value="" required maxlength="120" autocomplete="address-level2">
     <button type="submit">Go</button>
   </form>
 </body>
